@@ -11,11 +11,8 @@
    <div id="marksheet">
       <div class="header">
            <div class="img_container">
-                  <img src="/Untitled.jpg">
+                  <img src="/image.png">
            </div> 
-            <h1>
-              Rahul International jr.college of commerce  & science, boisar(w)
-            </h1>
       </div>
           <div class="main">
                <div class="title">
@@ -28,32 +25,32 @@
                             <div class="col">
                               <div class="name">
                                 <label for="student_name" id="nme">Student Name:</label>
-                                <input type="text"  id="student_name" placeholder="enter student name">
+                                <input type="text"  id="student_name" placeholder="enter student name" required>
                               </div>
                               <div class="rl_no">
                                 <label for="student_roll_no">Roll no:</label>
-                              <input type="text" id="student_roll_no" placeholder="Enter roll no">
+                              <input type="text" id="student_roll_no" placeholder="Enter roll no" required>
                               </div>
                             </div>
                             <div class="col">
                               <div class="fname">
                                 <label for="student_father_name" id="father_name">Father's name:</label>
-                              <input type="text" id="student_father_name" placeholder="Enter father name">
+                              <input type="text" id="student_father_name" placeholder="Enter father name" required>
                               </div>
                               <div class="gr_n">
                                 <label for="student_gr_no" id="gr_no">Gr no:</label>
-                                <input type="text" id="student_gr_no" placeholder="Enter gr no">  
+                                <input type="text" id="student_gr_no" placeholder="Enter gr no"  required>  
                               </div> 
                              
                             </div>   
                               <div class="col">
                                 <div class="mother_name">
                                    <label for="student_mother_name" id="m_name">Mother's Name:</label>
-                                   <input type="text" id="student_mother_name" placeholder="Enter mother name">
+                                   <input type="text" id="student_mother_name" placeholder="Enter mother name" required>
                                 </div>
                                 <div class="cls">
-                                  <label for="student_class" id="class">section</label>
-                                   <input type="text" id="student_class" placeholder="Enter stream">
+                                  <label for="student_class" id="class">section:</label>
+                                   <input type="text" id="student_class" placeholder="Enter stream" required>
                                 </div>
                               </div>
                           </form>
@@ -75,30 +72,14 @@
                       </div>
                          <div class="subject_data_container">
                           <div class="subjects_name">
-                            <div>
-                               English
-                            </div>
-                            <div>
-                               Physcis
-                            </div>
-                            <div>
-                               Chemistry
-                            </div>
-                            <div>
-                               Maths
-                            </div>
-                            <div>
-                               I.T
-                            </div>
-                            <div>
-                               BIOLOGOY
-                            </div>
-                            <div>
-                                E.V.S
-                            </div>
-                            <div>
-                                Health & Phy edu
-                            </div>
+                          <input type="text" id="subjects_name_item_input_1" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_2" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_3" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_4" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_5" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_6" placeholder="Enter subject name" required>
+                          <input type="text" id="subject_name_item_input_7" placeholder="Enter subject name" value="E.V.S" readonly>
+                          <input type="text" id="subject_name_item_input_8" placeholder="Enter subject name" value = "Health & Phy Educ" readonly>
                       </div>
                       <div class="max_marks">
                           <input type="text" id="max_item_input_1" readonly value="100">
@@ -107,8 +88,8 @@
                           <input type="text" id="max_item_input_4" readonly value="100">
                           <input type="text" id="max_item_input_5" readonly value="100">
                           <input type="text" id="max_item_input_6" readonly value="100">
-                          <input type="text" id="max_item_input_7" readonly value="100">
-                          <input type="text" id="max_item_input_8" readonly value="100">
+                          <input type="text" id="max_item_input_7" readonly value="50">
+                          <input type="text" id="max_item_input_8" readonly value="">
                       </div>
                       <div class="passing_marks">
                        <input type="text" id="passing_item_input_1" readonly value="35">
@@ -118,17 +99,17 @@
                        <input type="text" id="passing_item_input_5" readonly value="35">
                        <input type="text" id="passing_item_input_6" readonly value="35">
                        <input type="text" id="passing_item_input_7" readonly value="35">
-                       <input type="text" id="passing_item_input_8" readonly value="35">
+                       <input type="text" id="passing_item_input_8" readonly value="">
                       </div>
                       <div class="obtained_marks">
-                          <input type="text" id="obtained_item-1" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-2" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-3" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-4" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-5" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-6" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-7" placeholder="Enter mark">
-                          <input type="text" id="obtained_item-8" placeholder="Enter mark">
+                          <input type="text" id="obtained_item-1" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-2" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-3" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-4" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-5" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-6" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-7" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-8" placeholder="Enter mark" required>
                       </div>
                          </div>
                     </div>
@@ -137,21 +118,11 @@
           </div>
       
           <div class="footer">
-            <div class="footer_info">
-              <div class="teacher_sign">
-                <p>class teacher</p>
-              </div>
-              <div class="college_seal">
-                <p>college seal</p>
-              </div>
-              <div class="principal">
-                <p>principal</p>    
-              </div>
+            <div class="footer_info btn_container">
+                  <button type="submit" class="generate_marksheet">Generate marksheet</button>
             </div>
             <div class="contact">
-                  <p class="email"><i class="fa fa-envelope"></i> enquiry@Rahuleducation.com</p>
-                  <p><i class="fa fa-globe"></i> www.rahuleducation.org</p>
-                  <p><i class="fa-solid fa-phone-volume"></i> 1800 210 1002</i></p>
+                   <img src="footer.png" alt="()" style="width: 100%;">
             </div>
           </div>
       
