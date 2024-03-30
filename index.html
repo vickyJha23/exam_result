@@ -6,6 +6,7 @@
     <title>MarkSheet application</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <script src="app.js" defer></script>
   </head>
   <body>
    <div id="marksheet">
@@ -20,40 +21,40 @@
                     <h3 class="branch">Science section</h3>      
                </div>
                <div class="container">
-                    <div class="students_data">
-                          <form class="students_data_content">
+                 <form class="students_data">
+                    <div class="students_data_content">
                             <div class="col">
                               <div class="name">
                                 <label for="student_name" id="nme">Student Name:</label>
-                                <input type="text"  id="student_name" placeholder="enter student name" required>
+                                <input type="text"  id="student_name" placeholder="enter student name" required name="StudentName">
                               </div>
                               <div class="rl_no">
-                                <label for="student_roll_no">Roll no:</label>
-                              <input type="text" id="student_roll_no" placeholder="Enter roll no" required>
+                                <label for="student_roll_no" id="rl_no">Roll no:</label>
+                              <input type="text" id="student_roll_no" placeholder="Enter roll no" required name="rollNo">
                               </div>
                             </div>
                             <div class="col">
                               <div class="fname">
                                 <label for="student_father_name" id="father_name">Father's name:</label>
-                              <input type="text" id="student_father_name" placeholder="Enter father name" required>
+                                <input type="text" id="student_father_name" placeholder="Enter father name" required name="fatherName">
                               </div>
                               <div class="gr_n">
                                 <label for="student_gr_no" id="gr_no">Gr no:</label>
-                                <input type="text" id="student_gr_no" placeholder="Enter gr no"  required>  
+                                 <input type="text" id="student_gr_no" placeholder="Enter gr no" required name="grNo">  
                               </div> 
                              
                             </div>   
                               <div class="col">
                                 <div class="mother_name">
                                    <label for="student_mother_name" id="m_name">Mother's Name:</label>
-                                   <input type="text" id="student_mother_name" placeholder="Enter mother name" required>
+                                   <input type="text" id="student_mother_name" placeholder="Enter mother name" required name="motherName">
                                 </div>
                                 <div class="cls">
                                   <label for="student_class" id="class">section:</label>
-                                   <input type="text" id="student_class" placeholder="Enter stream" required>
+                                   <input type="text" id="student_class" placeholder="Enter stream" required name="class">
                                 </div>
                               </div>
-                          </form>
+                
                     </div>
                     <div class="subjects_data">
                       <div class="sub_header">
@@ -72,55 +73,60 @@
                       </div>
                          <div class="subject_data_container">
                           <div class="subjects_name">
-                          <input type="text" id="subjects_name_item_input_1" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_2" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_3" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_4" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_5" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_6" placeholder="Enter subject name" required>
-                          <input type="text" id="subject_name_item_input_7" placeholder="Enter subject name" value="E.V.S" readonly>
-                          <input type="text" id="subject_name_item_input_8" placeholder="Enter subject name" value = "Health & Phy Educ" readonly>
+                          <input type="text" id="subject_name_item_input_1" placeholder="Enter subject name" required name="sub1">
+                          <input type="text" id="subject_name_item_input_2" placeholder="Enter subject name" required name="sub2">
+                          <input type="text" id="subject_name_item_input_3" placeholder="Enter subject name" required name="sub3">
+                          <input type="text" id="subject_name_item_input_4" placeholder="Enter subject name" required name="sub4">
+                          <input type="text" id="subject_name_item_input_5" placeholder="Enter subject name" required name="sub5">
+                          <input type="text" id="subject_name_item_input_6" placeholder="Enter subject name" required name="sub6">
+                          <input type="text" id="subject_name_item_input_7" placeholder="Enter subject name" value="E.V.S" readonly name="sub7">
+                          <input type="text" id="subject_name_item_input_8" placeholder="Enter subject name" value = "phe" readonly name="sub8">
+                          <input type="text" id="subject_name_item_input_9" placeholder="Enter Attendance" value="Attendance" readonly name="atten">
                       </div>
                       <div class="max_marks">
-                          <input type="text" id="max_item_input_1" readonly value="100">
-                          <input type="text" id="max_item_input_2" readonly value="100">
-                          <input type="text" id="max_item_input_3" readonly value="100">
-                          <input type="text" id="max_item_input_4" readonly value="100">
-                          <input type="text" id="max_item_input_5" readonly value="100">
-                          <input type="text" id="max_item_input_6" readonly value="100">
-                          <input type="text" id="max_item_input_7" readonly value="50">
-                          <input type="text" id="max_item_input_8" readonly value="">
+                          <input type="text" id="max_item_input_1" readonly value="100" name="maxMark1">
+                          <input type="text" id="max_item_input_2" readonly value="100" name="maxMark2">
+                          <input type="text" id="max_item_input_3" readonly value="100" name="maxMark3">
+                          <input type="text" id="max_item_input_4" readonly value="100" name="maxMark4">
+                          <input type="text" id="max_item_input_5" readonly value="100" name="maxMark5">
+                          <input type="text" id="max_item_input_6" readonly value="100" name="maxMark6">
+                          <input type="text" id="max_item_input_7" readonly value="50" name="maxMark7">
+                          <input type="text" id="max_item_input_8" readonly value="A+" name="maxMark8">
+                          <input type="text" id="max_item_input_8" readonly value="" name="maxMark9">
                       </div>
                       <div class="passing_marks">
-                       <input type="text" id="passing_item_input_1" readonly value="35">
-                       <input type="text" id="passing_item_input_2" readonly value="35">
-                       <input type="text" id="passing_item_input_3" readonly value="35">
-                       <input type="text" id="passing_item_input_4" readonly value="35">
-                       <input type="text" id="passing_item_input_5" readonly value="35">
-                       <input type="text" id="passing_item_input_6" readonly value="35">
-                       <input type="text" id="passing_item_input_7" readonly value="35">
-                       <input type="text" id="passing_item_input_8" readonly value="">
+                       <input type="text" id="passing_item_input_1" readonly value="35" name="passMark1">
+                       <input type="text" id="passing_item_input_2" readonly value="35" name="passMark2">
+                       <input type="text" id="passing_item_input_3" readonly value="35" name="passMark3">
+                       <input type="text" id="passing_item_input_4" readonly value="35" name="passMark4">
+                       <input type="text" id="passing_item_input_5" readonly value="35" name="passMark5">
+                       <input type="text" id="passing_item_input_6" readonly value="35" name="passMark6">
+                       <input type="text" id="passing_item_input_7" readonly value="35" name="passMark7">
+                       <input type="text" id="passing_item_input_8" readonly value="E" name="passMark8">
+                       <input type="text" id="passing_item_input_8" readonly value="" name="passMark9">
                       </div>
                       <div class="obtained_marks">
-                          <input type="text" id="obtained_item-1" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-2" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-3" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-4" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-5" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-6" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-7" placeholder="Enter mark" required>
-                          <input type="text" id="obtained_item-8" placeholder="Enter mark" required>
+                          <input type="text" id="obtained_item-1" placeholder="Enter mark" required maxlength="3" name="obtMark1">
+                          <input type="text" id="obtained_item-2" placeholder="Enter mark" required maxlength="3" name="obtMark2">
+                          <input type="text" id="obtained_item-3" placeholder="Enter mark" required maxlength="3" name="obtMark3">
+                          <input type="text" id="obtained_item-4" placeholder="Enter mark" required maxlength="3" name="obtMark4">
+                          <input type="text" id="obtained_item-5" placeholder="Enter mark" required maxlength="3" name="obtMark5">
+                          <input type="text" id="obtained_item-6" placeholder="Enter mark" required maxlength="3" name="obtMark6">
+                          <input type="text" id="obtained_item-7" placeholder="Enter mark" required maxlength="3" name="obtMark7">
+                          <input type="text" id="obtained_item-8" placeholder="Enter mark" required maxlength="3" name="obtMark8">
+                          <input type="text" id="obtained_item-8" placeholder="Enter Attendance" required maxlength="4" name="obtAtt">
                       </div>
                          </div>
                     </div>
+                    <div class="footer_info btn_container">
+                          <button type="submit" class="generate_marksheet">Generate marksheet</button>
+                    </div>
+                  </form>
                </div>
 
           </div>
       
           <div class="footer">
-            <div class="footer_info btn_container">
-                  <button type="submit" class="generate_marksheet">Generate marksheet</button>
-            </div>
             <div class="contact">
                    <img src="footer.png" alt="()" style="width: 100%;">
             </div>

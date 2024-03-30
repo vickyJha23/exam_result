@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result application</title>
+    <script src="app2.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div id="result">
+      <div class="header">
+        <img src="/image.png" alt="()" />
+      </div>
+      <div class="main">
+        <div class="title">
+          <h1>ACADEMIC YEAR : 2023-24</h1>
+          <h3 class="stream">SCIENCE SECTION</h3>
+        </div>
+        <div class="container">
+          <div class="student_info">
+            <div class="name_label">
+              <p>Student Name:</p>
+              <p>Father's Name:</p>
+              <p>Mother's Name:</p>
+            </div>
+            <div class="names_data">
+              <p class="student_name">Rajesh Jha</p>
+              <p class="father_name">Shailendra Jha</p>
+              <p class="mother_name">Sudhira Jha</p>
+            </div>
+            <div class="extra_data_label">
+              <p>Roll No:</p>
+              <p>Gr.No:</p>
+              <p>Class/Section:</p>
+            </div>
+            <div class="extra_data">
+              <p class="roll_no">45</p>
+              <p class="gr_no">45</p>
+              <p class="class">45</p>
+            </div>
+          </div>
+          <div class="subjects_info">
+            <div class="subject_title">
+              <div class="s">
+                <p>Subjects</p>
+              </div>
+              <div class="mm">
+                <p>Max marks</p>
+              </div>
+              <div class="pm">
+                <p>Passing Marks</p>
+              </div>
+              <div class="o">
+                <p>Obtained</p>
+              </div>
+            </div>
+            <div class="sub_con">
+              <div class="subjects">
+                <div class="s1">English</div>
+                <div class="s2">Physics</div>
+                <div class="s3">Chemistry</div>
+                <div class="s4">Maths</div>
+                <div class="s5">I.T</div>
+                <div class="s6">Biology</div>
+                <div class="s7">E.V.s</div>
+                <div class="s8">PHE</div>
+              </div>
+              <div class="maxM">
+                <div class="mm1">100</div>
+                <div class="mm2">100</div>
+                <div class="mm3">100</div>
+                <div class="mm4">100</div>
+                <div class="mm5">100</div>
+                <div class="mm6">100</div>
+                <div class="mm7">50</div>
+                <div class="mm8">A+</div>
+              </div>
+              <div class="PassM">
+                <div class="pm1">35</div>
+                <div class="pm2">35</div>
+                <div class="pm3">35</div>
+                <div class="pm4">35</div>
+                <div class="pm5">35</div>
+                <div class="pm6">35</div>
+                <div class="pm7">18</div>
+                <div class="pm8">E</div>
+              </div>
+              <div class="ObtM">
+                <div class="om1">100</div>
+                <div class="om2">100</div>
+                <div class="om3">100</div>
+                <div class="om4">100</div>
+                <div class="om5">100</div>
+                <div class="om6">100</div>
+                <div class="om7">100</div>
+                <div class="om8">100</div>
+              </div>
+            </div>
+            <div class="totalContainer">
+                <p>total</p>
+                <p class="MaxTotal">650</p>
+                <p class="PassTotal">288</p>
+                <p class="obtTotal"></p>
+            </div>
+            <div class="cal_result_con">
+                 <div class="labelresult">
+                     <div class="agg">
+                         <p>Aggregate</p>
+                     </div>
+                     <div class="per">
+                         <p>Percentage(%)</p>
+                     </div>
+                     <div class="res">
+                         <p>Result</p>
+                     </div>
+                     <div class="att">
+                         <p>Attendance</p>
+                     </div>
+                     <div class="con">
+                         <p>Conduct</p>
+                     </div>
+                 </div>
+                 <div class="calresult">
+                      <p class="calAgg">288</p>
+                      <p class="calPer">44.33</p>
+                      <p class="calRes">Passed and Promoted</p>
+                      <p class="calAtt">139</p>
+                      <p class="calCon">Can do better</p>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+          <div class="signatures">
+               <div class="class_teacher">
+                  <div></div>
+                  class teacher
+               </div>
+               <div class="college_seal">
+                    <div></div>
+                    college seal
+               </div>
+               <div class="principal">
+                   <div></div>
+                    principal
+               </div>
+          </div>
+         <img src="footer.png" alt="" style="width: 100%;">
+      </div>
+    </div>
+    <div class="btn_container">
+      <button class="pdf_btn">generate pdf</button>
+    </div> 
+    
+  </body>
+</html>
