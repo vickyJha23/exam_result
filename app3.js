@@ -102,7 +102,7 @@ function generateResult(obj){
       div.innerHTML =   `
       <div id="result">
       <div class="header">
-        <img src="/exam_result/image.png" alt="()" />
+        <img src="image.png" alt="()" />
       </div>
       <div class="main">
         <div class="title">
