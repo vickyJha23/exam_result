@@ -244,3 +244,38 @@ input::placeholder{
        text-decoration: none;
        font-size: 1rem;
 }
+
+@media screen and (max-width: 450px){
+     #marksheet{
+        height: 100vh;
+        width: 100vw;
+     }
+     .container > *, input{
+        font-size: 0.65rem !important;
+     }
+     input::placeholder{
+       font-size: 0.5rem;
+     }
+     .col{
+          display: grid;
+          grid-template-columns: auto;
+          grid-template-rows: repeat(2, 1fr);
+       
+     }
+     .col > div label{
+         flex: 30%;
+     }          
+     .col > div input {
+          flex: 50%;
+     }
+     .col input{
+         margin-bottom: 0.5rem;
+     }
+     .sub > p{
+       padding: 0.5rem 0;
+     }
+     .mm > p{
+         padding: 0.5rem 0.1rem;
+     }
+     
+}
