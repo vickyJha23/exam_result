@@ -15,6 +15,7 @@ window.addEventListener("load", () => {
 });
 
 function setResult(item) {
+  console.log(item);
     item.forEach((obj) => {
          generateResult(obj)
     })

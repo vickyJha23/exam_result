@@ -10,7 +10,7 @@ form.addEventListener("submit", (e) => {
   let formData = new FormData(formElement);
    let formObj = Object.fromEntries(formData.entries());
    handleLocalStorage(formObj);
-   setBackToDefault();
+//    setBackToDefault();
 });
 function handleLocalStorage(data) {
     let items = getLocalStorage();
