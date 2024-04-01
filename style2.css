@@ -221,3 +221,8 @@
  .totalContainer > p:last-child{
      border-right: 1px solid #000;
  }
+ .date{
+    padding: 0.25rem 0.5rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+ }

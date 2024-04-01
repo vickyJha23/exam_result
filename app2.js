@@ -52,8 +52,10 @@ window.addEventListener("load", function () {
   let decodedData = decodeURIComponent(encodedData);
   const dataObject = JSON.parse(decodedData);
      handleMarksheetGeneration(dataObject);
+     pdfBtn.addEventListener("click", () => {
+           generatePdf(dataObject);
+     });
 });
-pdfBtn.addEventListener("click", generatePdf);
 
 function handleMarksheetGeneration(studentData) {
       updateMarksheet(studentData);
@@ -68,6 +70,7 @@ function updateMarksheet(studentData){
        studentName.textContent = `${studentData.StudentName}`;
        studentName.textContent = `${studentData.StudentName}`;
        studentName.textContent = `${studentData.StudentName}`;
+       studentClass.textContent = `${studentData.class}`;
        sub1.textContent = `${studentData.sub1}`;
        sub2.textContent = `${studentData.sub2}`;
        sub3.textContent = `${studentData.sub3}`;
@@ -76,6 +79,22 @@ function updateMarksheet(studentData){
        sub6.textContent = `${studentData.sub6}`;
        sub7.textContent = `${studentData.sub7}`;
        sub8.textContent = `${studentData.sub8}`;
+       maxMark1.textContent = `${studentData.maxMark1}`;
+       maxMark2.textContent = `${studentData.maxMark2}`;
+       maxMark3.textContent = `${studentData.maxMark3}`;
+       maxMark4.textContent = `${studentData.maxMark4}`;
+       maxMark5.textContent = `${studentData.maxMark5}`;
+       maxMark6.textContent = `${studentData.maxMark6}`;
+       maxMark7.textContent = `${studentData.maxMark7}`;
+       maxMark8.textContent = `${studentData.maxMark8}`;
+       passMark1.textContent =   `${studentData.passMark1}`;
+       passMark2.textContent =   `${studentData.passMark2}`;
+       passMark3.textContent =   `${studentData.passMark3}`;
+       passMark4.textContent =   `${studentData.passMark4}`;
+       passMark5.textContent =   `${studentData.passMark5}`;
+       passMark6.textContent =   `${studentData.passMark6}`;
+       passMark7.textContent =   `${studentData.passMark7}`;
+       passMark8.textContent =   `${studentData.passMark8}`;
        obtMark1.textContent = `${studentData.obtMark1}`;
        obtMark2.textContent = `${studentData.obtMark2}`;
        obtMark3.textContent = `${studentData.obtMark3}`;
@@ -95,8 +114,8 @@ function updateMarksheet(studentData){
        calAttendance.textContent = `${studentData.obtAtt} days`;
        const greeting = handleGreeting(percentage);
        calComment.textContent = greeting;
-       
-
+       const resultComment = displayResult(percentage);
+       calResult.textContent = resultComment;
 }
 function handleSumOfMarks(...values){
      values = values.reduce((acc, currValue) => {
@@ -133,11 +152,38 @@ function handleGreeting(percentage){
            return 'insufficient';
       }
 }
-function generatePdf() {
+function displayResult(percentage) {
+     if(percentage >= 90 && percentage <= 100){
+          return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 80 && percentage < 90){
+          return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 70 && percentage < 80){
+         return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 60 && percentage < 70){
+        return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 50 && percentage < 60){
+        return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 40 && percentage < 50){
+         return `Passed and Promoted to syjc`;
+    }
+    else if(percentage >= 35 && percentage < 40){
+        return `Passed and Promoted to syjc`;
+    }
+    else{
+         return 'failed';
+    }
+}
+
+function generatePdf(studentData) {
   let element = document.querySelector("#result");
   const opt = {
     margin: 0.2,
-    filename: "result.pdf",
+    filename: `${studentData.StudentName}.pdf`,
     image: { type: "jpeg", quality: 0.98 },
     html2Canvas: { scale: 2, imageSmoothingEnabled: true },
     jsPDF: { unit: "in", format: "a4", orientation: "portrait" },

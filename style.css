@@ -12,9 +12,9 @@ body{
      place-items: center;
 }
 #marksheet{
-    width: 90vh;
+    width: 90vw;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 720px;
     background: #fff;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
@@ -65,8 +65,8 @@ body{
 .col > div label{
       white-space: nowrap;
       text-transform: uppercase;
-      letter-spacing: 2px;
-      font-weight: 600;
+      letter-spacing: 1px;
+      font-weight: 500;
       flex: 40%;
 }
 .col > div input{
@@ -125,7 +125,7 @@ body{
       vertical-align: middle;
       border: none;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 1px;
       font-size: 1rem;
       text-align: left;
@@ -203,7 +203,7 @@ input::placeholder{
      gap: 10px;
      margin-bottom: 1rem;
 }
-.btn_container > button{
+.btn_container > button, .clear, .next{
        border: none;
        padding: 0.25rem 0.5rem;
        text-transform: uppercase;
@@ -220,6 +220,22 @@ input::placeholder{
       background: goldenrod;
       color: #fff;
 }     
+.btns{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            padding: 0 1rem;
+            margin-bottom: 1rem;
+}
 .contact img{
    vertical-align: middle;
+}
+.clear{
+ background-color: red;
+ color: #fff;     
+}
+.next{
+       background-color: green;
+       color: #fff;
 }
