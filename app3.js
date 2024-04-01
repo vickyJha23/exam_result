@@ -29,15 +29,15 @@ function generateResult(obj){
        const year = date.getFullYear();
        const newDate = `${dt}/0${(month + 1)}/${year}`; 
        obj.maxMarksTotal = function () {
-            return ['maxMark1', 'maxMark2', 'maxMark3', 'maxMark4', 'maxMark4', 'maxMark5', 'maxMark6', 'maxMark7'].reduce((total, key) =>{
-                   if(obj.hasOwnProperty(key) && !isNaN(parseInt(obj[key]))){
-                      return total + parseInt(obj[key]);
-                   }
-                   else{
-                      console.log(`invalid or missing key property ${key}`);
-                      return total;
-                   }
-            }, 0)
+           let total = `${parseInt(this.maxMark1) + 
+            parseInt(this.maxMark2) + 
+            parseInt(this.maxMark3) + 
+             parseInt(this.maxMark4) + 
+             parseInt(this.maxMark5) + 
+             parseInt(this.maxMark6) + 
+             parseInt(this.maxMark7)}`;
+             console.log(total);
+             return total;
        };
        obj.totalPassing = function() {
             let total = `${parseInt(this.passMark1) + 
