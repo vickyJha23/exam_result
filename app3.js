@@ -242,7 +242,7 @@ function generateResult(obj){
                     principal
                </div>
           </div>
-         <img src="/exam_result/footer.png" alt="" style="width: 100%;">
+         <img src="footer.png" alt="" style="width: 100%;">
       </div>
     </div>
          `;
