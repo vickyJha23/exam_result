@@ -239,3 +239,8 @@ input::placeholder{
        background-color: green;
        color: #fff;
 }
+.next a{
+       color: #fff;
+       text-decoration: none;
+       font-size: 1rem;
+}

@@ -7,6 +7,7 @@ const {displayResult} = elements;
 console.log(displayResult);
 const {pdfBtn} = elements; //destructuring of array....
 window.addEventListener("load", () => {
+  console.log(localStorage.getItem("data"));
   let item = JSON.parse(localStorage.getItem("data"));
   setResult(item);
   pdfBtn.addEventListener("click", () => {
