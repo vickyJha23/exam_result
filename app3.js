@@ -212,7 +212,7 @@ function generateResult(obj){
                          <p>Attendance</p>
                      </div>
                      <div class="con">
-                         <p>Conduct</p>
+                         <p>Remark</p>
                      </div>
                  </div>
                  <div class="calresult">

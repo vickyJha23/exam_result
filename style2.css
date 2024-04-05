@@ -170,6 +170,9 @@
       height: 100px !important;
       border-radius: 50%;
   }
+  .principal > div {
+      width: 180px !important;
+  }
  .footer img{
      vertical-align: middle;
    object-fit: cover;
