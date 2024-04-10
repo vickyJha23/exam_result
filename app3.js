@@ -219,7 +219,7 @@ function generateResult(obj){
                       <p class="calAgg">${obj.obtainTotal()}</p>
                       <p class="calPer">${obj.percentage()}%</p>
                       <p class="calRes">${obj.result()}</p>
-                      <p class="calAtt">${obj.obtAtt}%</p>
+                      <p class="calAtt">${obj.obtAtt} days</p>
                       <p class="calCon">${obj.greeting()}</p>
                  </div>
             </div>
