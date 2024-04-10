@@ -251,7 +251,7 @@ function generateResult(obj){
 }
 function generatePdf(studentData) {
     let opt = {
-      margin:      [0.5, 0.2, 0.5, 0.2],
+      margin:      [0.6, 0.2, 0.6, 0.2],
       filename:     `result.pdf`,
       image:        { type: 'jpeg', quality: 0.98 },
       html2canvas:  { scale: 2 },
