@@ -119,7 +119,7 @@ function generateResult(obj){
               <p>Mother's Name:</p>
             </div>
             <div class="names_data">
-              <p class="student_name">${obj.StudentName}</p>
+              <p class="student_name" style="font-size: 14px; letter-spacing: 1px;">${obj.StudentName}</p>
               <p class="father_name">${obj.fatherName}</p>
               <p class="mother_name">${obj.motherName}</p>
             </div>
@@ -131,7 +131,7 @@ function generateResult(obj){
             <div class="extra_data">
               <p class="roll_no">${obj.rollNo}</p>
               <p class="gr_no">${obj.grNo}</p>
-              <p class="class">${obj.class}</p>
+              <p class="class" style="font-size: 14px; letter-spacing: 1px;">${obj.class}</p>
             </div>
           </div>
           <div class="subjects_info">
